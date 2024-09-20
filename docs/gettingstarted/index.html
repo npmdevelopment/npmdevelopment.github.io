@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Getting Started - NPM.js Package</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Link to the external CSS file -->
+    <link rel="icon" href="../favicon.png" type="image/png"> <!-- Optional favicon -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Getting Started with NPM.js Package</h1>
+
+        <h2>Description</h2>
+        <p>The <code>Package</code> npm module simplifies the process of importing folders and files into your project. It offers a convenient way to manage and use your files with just a few commands.</p>
+        <p>With this package, you can easily export and import files and folders, making it a versatile tool for managing your project's resources.</p>
+        <p><strong>Note:</strong> This package is compatible with Node.js. The code will be published on GitHub soon.</p>
+
+        <h2>Installation</h2>
+        <p>To install the package, use the following command:</p>
+        <div class="code-box">
+            npm install npmjs-file
+        </div>
+
+        <h2>Usage</h2>
+
+        <h3>Exporting Files</h3>
+        <p>To export your folder and its contents, use the following command in your terminal:</p>
+        <div class="code-box">
+            node ./node_modules/npm-package/main --export your-folder-package
+        </div>
+        <p>Replace <code>your-folder-package</code> with the path to the folder you want to export.</p>
+
+        <h3>Importing Files</h3>
+        <p>To import files and folders, use the following command:</p>
+        <div class="code-box">
+            node ./node_modules/npm-package/main --import path.npmjs
+        </div>
+        <p>Replace <code>path.npmjs</code> with the path to the <code>.npmjs</code> file you want to import.</p>
+
+        <h2>Example</h2>
+        <p>Here's an example of how to use the package in your project:</p>
+        <ol>
+            <li>Export a folder:
+                <div class="code-box">
+                    node ./node_modules/npm-package/main --export ./my-folder
+                </div>
+            </li>
+            <li>Import the folder into another project:
+                <div class="code-box">
+                    node ./node_modules/npm-package/main --import ./my-folder.npmjs
+                </div>
+            </li>
+        </ol>
+
+        <h2>Next Steps</h2>
+        <p>For additional information, refer to the documentation.</p>
+        <a href="../index.html" class="btn">Back to Home</a>
+    </div>
+
+    <script src="../gs.js"></script> <!-- Link to gs.js -->
+    <script src="../index.js"></script> <!-- Link to index.js -->
+
+</body>
+</html>
